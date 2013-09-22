@@ -1,6 +1,7 @@
 
 # IMAP folders
 set my_drafts="Brouillons"
+set my_drafts_noquote="Brouillons"
 set my_sent="Éléments<quote-char><space>envoyés"
 set my_sent_noquote="Éléments envoyés"
 set my_trash="Éléments<quote-char><space>supprimés"

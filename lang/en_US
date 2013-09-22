@@ -1,6 +1,7 @@
 
 # IMAP folders
 set my_drafts="Drafts"
+set my_drafts_noquote="Drafts"
 set my_sent="Sent<quote-char><space>Items"
 set my_sent_noquote="Sent Items"
 set my_trash="Deleted<quote-char><space>Items"
