@@ -24,7 +24,7 @@ set folder="imaps://outlook.office365.com/"
 set spoolfile= +INBOX
 set postponed= +$my_drafts
 set record = +$my_sent_noquote
-set trash = +$my_trash
+set trash = +$my_trash_noquote
 mailboxes
 
 set imap_check_subscribed="yes"
