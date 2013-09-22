@@ -1,0 +1,117 @@
+## Basic configuration
+
+# User config
+set my_realname="John Smith"
+set my_username="john.smith"
+set my_domain="example.com"
+set my_password="This password is secure"
+set my_lang="fr_FR"
+
+### Advanced configuration
+### YOU SHOULD NOT MODIFY THIS UNLESS YOU KNOW WHAT YOU'RE DOING
+
+# Loading language properties
+
+source "~/.mutt/lang/$my_lang"
+
+## Server config
+
+# IMAP config
+set imap_user="$my_username@$my_domain"
+set imap_pass=$my_password
+
+set folder="imaps://outlook.office365.com/"
+set spoolfile= +INBOX
+set postponed= +$my_drafts
+set record = +$my_sent_noquote
+set trash = +$my_trash
+mailboxes
+
+set imap_check_subscribed="yes"
+set imap_list_subscribed="yes"
+set timeout=15
+set mail_check=90
+set imap_keepalive=180
+set imap_idle
+unset mark_old
+set ssl_use_sslv3=yes
+
+# SMTP config
+set realname = $my_realname
+set from = "$my_username@$my_domain"
+set smtp_pass = $my_password
+
+set smtp_url = "smtp://$my_username@$my_domain@outlook.office365.com:587/"
+set ssl_force_tls = yes
+set smtp_authenticators = "login"
+
+## More settings
+
+# File storage settings
+
+set signature="~/.mutt/signature"
+set message_cachedir="~/.mutt/message_cache"
+set header_cache="~/.mutt/header_cache"
+set tmpdir="~/.mutt/tmp"
+
+# Text view first
+set pager_stop="yes"
+set smart_wrap="yes"
+alternative_order text/plain
+auto_view text/html
+set reverse_name=yes
+set reverse_realname=yes
+
+# Text editor
+#set editor='vim + -c "set textwidth=72" -c "set wrap" -c "set nocp" -c "?^$"'
+set editor="vim"
+
+# Adress book handling
+set sort_alias=alias
+set reverse_alias=yes
+source "~/.mutt/aliases"
+
+# Thread ordering
+set sort_browser="reverse-date"
+set sort_aux="last-date-received"
+unset collapse_unread
+
+
+## Key bindings
+
+# Mailboxes
+bind index 'G' imap-fetch-mail
+macro index gi "<change-folder>=INBOX<enter>" "Go to Inbox"
+macro index gs "<change-folder>=$my_sent<enter>" "Go to Sent"
+macro index gd "<change-folder>=$my_drafts<enter>" "Go to Drafts"
+macro index gt "<change-folder>=$my_trash<enter>" "Go to Trash"
+
+
+# Index
+bind    index   <up>        previous-entry
+bind    index   <down>      next-entry
+bind    index   <delete>    delete-message
+bind    index   n           next-entry
+bind    index   p           previous-entry
+macro   index   Q           ":set quit=yes\nq" "Quit mutt without asking"
+bind    index   C           noop
+bind    index   -           collapse-thread
+bind    index   _           collapse-all
+
+# Pager
+bind    pager   <up>        previous-line
+bind    pager   <down>      next-line
+bind    pager   <left>      previous-entry
+bind    pager   <right>     next-entry
+bind    pager   <delete>    delete-message
+bind    pager   k           previous-line
+bind    pager   j           next-line
+bind    pager   n           next-entry
+bind    pager   p           previous-entry
+bind    pager   w           previous-page
+
+# For better looks
+#set markers=no # don't put '+' at the beginning of wrapped lines
+#set pager_index_lines= 5 # how large is the index window?
+#set sort = 'threads'
+#set sort_aux = 'last-date-received'

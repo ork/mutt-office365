@@ -1,0 +1,16 @@
+
+# IMAP folders
+set my_drafts="Brouillons"
+set my_sent="Éléments<quote-char><space>envoyés"
+set my_sent_noquote="Éléments envoyés"
+set my_trash="Éléments<quote-char><space>supprimés"
+
+# Quotation and date formats
+set attribution="Le %d, %n a écrit :"
+set date_format="!%d/%m/%Y %H:%M"
+
+# Hours and dates
+set locale="fr_FR.UTF-8"
+set charset="utf-8"
+set assumed_charset="utf-8"
+set send_charset="utf-8:iso-8859-15:us-ascii"
