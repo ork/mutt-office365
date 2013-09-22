@@ -40,7 +40,7 @@ set ssl_use_sslv3=yes
 set realname = $my_realname
 set from = "$my_username@$my_domain"
 set smtp_pass = $my_password
-
+set hostname = $my_domain
 set smtp_url = "smtp://$my_username@$my_domain@outlook.office365.com:587/"
 set ssl_force_tls = yes
 set smtp_authenticators = "login"
@@ -72,6 +72,7 @@ set reverse_alias=yes
 source "~/.mutt/aliases"
 
 # Thread ordering
+set sort = 'threads'
 set sort_browser="reverse-date"
 set sort_aux="last-date-received"
 unset collapse_unread
@@ -80,12 +81,11 @@ unset collapse_unread
 ## Key bindings
 
 # Mailboxes
-bind index 'G' imap-fetch-mail
-macro index gi "<change-folder>=INBOX<enter>" "Go to Inbox"
-macro index gs "<change-folder>=$my_sent<enter>" "Go to Sent"
-macro index gd "<change-folder>=$my_drafts<enter>" "Go to Drafts"
-macro index gt "<change-folder>=$my_trash<enter>" "Go to Trash"
-
+bind    index   G  imap-fetch-mail
+macro   index   gi "<change-folder>=INBOX<enter>"       "Go to Inbox"
+macro   index   gs "<change-folder>=$my_sent<enter>"    "Go to Sent"
+macro   index   gd "<change-folder>=$my_drafts<enter>"  "Go to Drafts"
+macro   index   gt "<change-folder>=$my_trash<enter>"   "Go to Trash"
 
 # Index
 bind    index   <up>        previous-entry
@@ -110,8 +110,26 @@ bind    pager   n           next-entry
 bind    pager   p           previous-entry
 bind    pager   w           previous-page
 
+# Colors
+color   normal      white black
+color   attachment  brightyellow black
+color   hdrdefault  cyan black
+color   indicator   black cyan
+color   markers     brightred black
+color   quoted      green black
+color   signature   cyan black
+color   status      brightgreen blue
+color   tilde       blue black
+color   tree        red black
+color   header      brightgreen black ^From:
+color   header      brightcyan black ^To:
+color   header      brightcyan black ^Reply-To:
+color   header      brightcyan black ^Cc:
+color   header      brightblue black ^Subject:
+color   body        brightred black [\-\.+_a-zA-Z0-9]+@[\-\.a-zA-Z0-9]+
+color   body        brightblue black (https?|ftp)://[\-\.,/%~_:?&=\#a-zA-Z0-9]+
+
 # For better looks
 #set markers=no # don't put '+' at the beginning of wrapped lines
 #set pager_index_lines= 5 # how large is the index window?
-#set sort = 'threads'
 #set sort_aux = 'last-date-received'
