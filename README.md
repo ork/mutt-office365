@@ -22,6 +22,21 @@ set my_lang="fr_FR"
 
 Don't forget your `~/.mutt/signature` file.
 
+## Usage
+
+Key bindings are used to move across IMAP folders. Sent messages are placed in
+the adequate folder. The IMAP connexion is persistent, thus making folders up to date without
+any user intervention.
+
+The new commands:
+```
+gi : Go to the inbox
+gs : Go to the sent messages
+gt : Go to the trash
+gd : Go to the drafts
+G  : Force IMAP sync
+```
+
 ## Todo
 
 Office365 IMAP folders are localized, which means we have to create dedicated config
