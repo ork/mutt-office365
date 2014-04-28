@@ -1,11 +1,6 @@
 ## Basic configuration
 
-# User config
-set my_realname="John Smith"
-set my_username="john.smith"
-set my_domain="example.com"
-set my_password="This password is secure"
-set my_lang="fr_FR"
+source "~/.mutt/user"
 
 ### Advanced configuration
 ### YOU SHOULD NOT MODIFY THIS UNLESS YOU KNOW WHAT YOU'RE DOING
@@ -70,6 +65,7 @@ set editor="vim"
 set sort_alias=alias
 set reverse_alias=yes
 source "~/.mutt/aliases"
+source "~/.mutt/mailing_lists"
 
 # Thread ordering
 set sort = 'threads'

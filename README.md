@@ -9,7 +9,7 @@ Clone this repository into the `~/.mutt/` directory.
 
 ## Configuration
 
-Edit the `~/.mutt/muttrc` file.
+Edit the `~/.mutt/user` file.
 
 ```bash
 # User config
@@ -40,7 +40,7 @@ G  : Force IMAP sync
 ## Todo
 
 Office365 IMAP folders are localized, which means we have to create dedicated config
-files for each language. Language definitions are localized under the `.mutt/lang/`
+files for each language. Language definitions are placed under the `.mutt/lang/`
 directory.
 
 Feel free to send me a pull request with the changes for your language.
