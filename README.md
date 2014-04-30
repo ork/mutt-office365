@@ -21,6 +21,7 @@ set my_lang="fr_FR"
 ```
 
 Don't forget your `~/.mutt/signature` file.
+Contacts and mailing-lists are stored in `~/.mutt/aliases` and `~/.mutt/mailing_lists`.
 
 ## Usage
 
