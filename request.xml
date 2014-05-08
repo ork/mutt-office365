@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Header>
+        <RequestServerVersion Version="Exchange2013" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" />
+    </soap:Header>
+    <soap:Body>
+        <FindPeople xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+            <PersonaShape>
+                <BaseShape xmlns="http://schemas.microsoft.com/exchange/services/2006/types">Default</BaseShape>
+            </PersonaShape>
+            <IndexedPageItemView MaxEntriesReturned="10000" Offset="0" BasePoint="Beginning" />
+            <ParentFolderId>
+                <AddressListId Id="edit_yourself_i_will_autodetect_later" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" />
+            </ParentFolderId>
+        </FindPeople>
+    </soap:Body>
+</soap:Envelope>

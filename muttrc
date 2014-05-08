@@ -64,6 +64,8 @@ set editor="vim"
 # Adress book handling
 set sort_alias=alias
 set reverse_alias=yes
+set alias_file="~/.mutt/aliases"
+source "~/.mutt/gal"
 source "~/.mutt/aliases"
 source "~/.mutt/mailing_lists"
 
