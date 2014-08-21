@@ -3,7 +3,24 @@ mutt-office365
 
 A mutt configuration file ready for Office 365
 
+## Preamble
+
+Tested with Mutt 1.5.23 from source code.
+
+
 ## Installation
+
+
+```
+# yum install gdbm-devel.x86_64 ncurses-devel.x86_64 cyrus-sasl-devel.x86_64 cyrus-sasl-plain.x86_64
+# wget https://bitbucket.org/mutt/mutt/downloads/mutt-1.5.23.tar.gz
+# tar xfvz mutt-1.5.23.tar.gz
+# cd mutt-1.5.23
+# ./configure --enable-debug --enable-imap --with-ssl --enable-smtp --enable-hcache --with-sasl
+# make install
+# ln -s /usr/local/bin/mutt /usr/bin/mutt
+```
+
 
 Clone this repository into the `~/.mutt/` directory.
 
