@@ -1,0 +1,17 @@
+# IMAP folders
+set my_drafts="Borradores"
+set my_drafts_noquote="Borradores"
+set my_sent="Elementos<quote-char><space>enviados"
+set my_sent_noquote="Elementos enviados"
+set my_trash="Elementos<quote-char><space>eliminados"
+set my_trash_noquote="Elementos eliminados"
+
+# Quotation and date formats
+set attribution="El %d, %n escribió:"
+set date_format="!%m/%d/%Y %H:%M"
+
+# Hours and dates
+set locale="es_ES.UTF-8"
+set charset="utf-8"
+set assumed_charset="utf-8"
+set send_charset="utf-8:us-ascii"
