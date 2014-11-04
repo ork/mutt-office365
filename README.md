@@ -7,9 +7,9 @@ A mutt configuration file ready for Office 365
 
 Tested with Mutt 1.5.23 from source code.
 
+Use your package manager to install Mutt.
 
-## Installation
-
+You need Mutt >= 1.5.23 and the cyrus-sasl-plain package on RPM systems. If it is not available, follow these instructions:
 
 ```
 # yum install gdbm-devel.x86_64 ncurses-devel.x86_64 cyrus-sasl-devel.x86_64 cyrus-sasl-plain.x86_64
@@ -21,6 +21,7 @@ Tested with Mutt 1.5.23 from source code.
 # ln -s /usr/local/bin/mutt /usr/bin/mutt
 ```
 
+## Installation
 
 Clone this repository into the `~/.mutt/` directory.
 
