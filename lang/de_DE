@@ -1,0 +1,17 @@
+# IMAP folders
+set my_drafts="Entwürfe"
+set my_drafts_noquote="Entwürfe"
+set my_sent="Gesendete<quote-char><space>Einträge"
+set my_sent_noquote="Gesendete Einträge"
+set my_trash="Gelöschte<quote-char><space>Einträge"
+set my_trash_noquote="Gelöschte Einträge"
+
+# Quotation and date formats
+set attribution="Am %d hat %n geschrieben:"
+set date_format="!%d.%m.%Y um %H:%M"
+
+# Hours and dates
+set locale="de_DE.UTF-8"
+set charset="utf-8"
+set assumed_charset="utf-8"
+set send_charset="utf-8:us-ascii"
