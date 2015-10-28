@@ -1,10 +1,10 @@
 # IMAP folders
 set my_drafts="Entwürfe"
 set my_drafts_noquote="Entwürfe"
-set my_sent="Gesendete<quote-char><space>Einträge"
-set my_sent_noquote="Gesendete Einträge"
-set my_trash="Gelöschte<quote-char><space>Einträge"
-set my_trash_noquote="Gelöschte Einträge"
+set my_sent="Gesendete<quote-char><space>Elemente"
+set my_sent_noquote="Gesendete Elemente"
+set my_trash="Gelöschte<quote-char><space>Elemente"
+set my_trash_noquote="Gelöschte Elemente"
 
 # Quotation and date formats
 set attribution="Am %d hat %n geschrieben:"
