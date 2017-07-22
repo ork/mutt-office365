@@ -11,7 +11,6 @@ set attribution="El %d, %n ha escrit:"
 set date_format="!%m/%d/%Y %H:%M"
 
 # Hours and dates
-set locale="ca_ES.UTF-8"
 set charset="utf-8"
 set assumed_charset="utf-8"
 set send_charset="utf-8:us-ascii"
