@@ -36,8 +36,7 @@ set realname = $my_realname
 set from = "$my_username@$my_domain"
 set smtp_pass = $my_password
 set hostname = $my_domain
-set smtp_url = "smtp://$my_username@$my_domain@outlook.office365.com:587/"
-set ssl_force_tls = yes
+set smtp_url = "smtp://$my_username@$my_domain@smtp.office365.com/"
 set smtp_authenticators = "login"
 
 ## More settings
