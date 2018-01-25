@@ -1,0 +1,17 @@
+
+# IMAP folders
+set my_drafts="Rascunhos"
+set my_drafts_noquote="Rascunhos"
+set my_sent="Itens<quote-char><space>Enviados"
+set my_sent_noquote="Enviados"
+set my_trash="Itens<quote-char><space>Excluidos"
+set my_trash_noquote="Itens Excluidos"
+
+# Quotation and date formats
+set attribution="O %d, %n escreveu:"
+set date_format="!%d/%m/%Y %H:%M"
+
+# Hours and dates
+set charset="utf-8"
+set assumed_charset="utf-8"
+set send_charset="utf-8:us-ascii"
