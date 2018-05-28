@@ -1,0 +1,17 @@
+
+# IMAP folders
+set my_drafts="Kladder"
+set my_drafts_noquote="Kladder"
+set my_sent="Sendt<quote-char><space>post"
+set my_sent_noquote="Sendt post"
+set my_trash="Slettet<quote-char><space>post"
+set my_trash_noquote="Slettet post"
+
+# Quotation and date formats
+set attribution="Den %d skrev %n:"
+set date_format="!%d/%m/%Y %H:%M"
+
+# Hours and dates
+set charset="utf-8"
+set assumed_charset="utf-8"
+set send_charset="utf-8:us-ascii"
