@@ -27,7 +27,7 @@ Clone this repository into the `~/.mutt/` directory.
 
 ## Configuration
 
-Edit the `~/.mutt/user` file.
+Copy the `~/.mutt/user_example` file to `~/.mutt/user` location, then edit the `user` file.
 
 ```bash
 # User config
@@ -38,7 +38,7 @@ set my_password="This password is secure"
 set my_lang="fr_FR"
 ```
 
-Don't forget your `~/.mutt/signature` file.
+Don't forget your `~/.mutt/signature` file. Copy `signature`, `aliases`, and `mailing_lists` from the examples just like you did for `user`.
 Contacts and mailing-lists are stored in `~/.mutt/aliases` and `~/.mutt/mailing_lists`.
 
 ## Usage
