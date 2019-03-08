@@ -8,7 +8,8 @@ set my_trash="Deleted"
 set my_trash_noquote="Deleted"
 
 # Quotation and date formats
-set attribution="Op %d, %n schreef:"
+set attribution_locale = "nl_NL"
+set attribution="Op %[%A %-d %B %Y om %H:%M], %n schreef:"
 set date_format="!%d-%m-%Y %H:%M"
 
 # Hours and dates
