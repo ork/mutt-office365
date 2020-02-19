@@ -1,0 +1,17 @@
+
+# IMAP folders
+set my_drafts="Utkast"
+set my_drafts_noquote="Utkast"
+set my_sent="Skickat"
+set my_sent_noquote="Skickat"
+set my_trash="Borttagna<quote-char><space>objekt"
+set my_trash_noquote="Borttagna objekt"
+
+# Quotation and date formats
+set attribution="Den %d skrev %n:"
+set date_format="!%Y-%m-%d %H:%M"
+
+# Hours and dates
+set charset="utf-8"
+set assumed_charset="utf-8"
+set send_charset="utf-8:us-ascii"
