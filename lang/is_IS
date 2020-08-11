@@ -1,0 +1,17 @@
+
+# IMAP folders
+set my_drafts="Uppköst"
+set my_drafts_noquote="Uppköst"
+set my_sent="Sendur<quote-char><space>póstur"
+set my_sent_noquote="Sendur póstur"
+set my_trash="Rusl"
+set my_trash_noquote="Rusl"
+
+# Quotation and date formats
+set attribution="Þann %d skrifaði %n:"
+set date_format="!%d/%m/%Y %H:%M"
+
+# Hours and dates
+set charset="utf-8"
+set assumed_charset="utf-8"
+set send_charset="utf-8:us-ascii"
