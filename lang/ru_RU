@@ -1,0 +1,17 @@
+
+# IMAP folders
+set my_drafts="Черновики"
+set my_drafts_noquote="Черновики"
+set my_sent="Отправленные"
+set my_sent_noquote="Отправленные"
+set my_trash="Удаленные"
+set my_trash_noquote="Удаленные"
+
+# Quotation and date formats
+set attribution="%d, %n пишет:"
+set date_format="!%d.%m.%Y %H:%M"
+
+# Hours and dates
+set charset="utf-8"
+set assumed_charset="utf-8"
+set send_charset="utf-8:us-ascii"
